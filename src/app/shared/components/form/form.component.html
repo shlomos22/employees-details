@@ -1,0 +1,126 @@
+<ion-row [ngStyle]="{'margin-top': '3%'}">
+
+
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.pinCode' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='showPinCode? "text": "password"'
+        [value]='inputs.employeePinCode.value? inputs.employeePinCode.value : ""'
+        [disabled]='inputs.employeePinCode.disabled' placeholder="{{'Pages.CardCreation.pinCode' |translate}}">
+      </ion-input>
+      <ion-button class='button-eye' fill='clear' type="button" (mouseover)="showPinCode = true"
+        (mouseout)="showPinCode = false">
+        <ion-icon name="eye-outline" color='dark' *ngIf="!showPinCode"> </ion-icon>
+        <ion-icon name="eye-off-outline" color='dark' *ngIf="showPinCode"> </ion-icon>
+      </ion-button>
+    </ion-item>
+
+  </ion-col>
+</ion-row>
+
+<ion-row [ngStyle]="{'margin-top': '3%'}">
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.issuingDate' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input [type]='inputs.envIssuingDate.type'
+        [value]='inputs.envIssuingDate.value? inputs.envIssuingDate.value : false'
+        [disabled]='inputs.envIssuingDate.disabled' placeholder="{{'Pages.CardCreation.issuingDate' |translate}}">
+      </ion-input>
+      <ion-button class='date-button ion-no-margin' shape='round' fill='clear' type="button">
+        <img src="assets/date.png">
+      </ion-button>
+    </ion-item>
+
+  </ion-col>
+</ion-row>
+
+<!-- <ion-row [ngStyle]="{'margin-top': '1%'}">
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.endDate' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='inputs.envEndDate.type'
+        [value]='inputs.envEndDate.value? inputs.envEndDate.value : ""' [disabled]='inputs.envEndDate.disabled'
+        placeholder="{{'Pages.CardCreation.endDate' |translate}}"></ion-input>
+      <ion-button class='date-button ion-no-margin' shape='round' fill='clear' type="button">
+        <img src="assets/date.png">
+      </ion-button>
+    </ion-item>
+
+  </ion-col>
+</ion-row> -->
+
+<ion-row [ngStyle]="{'margin-top': '1%'}">
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.role1' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input [type]='inputs.employeeRole1Code.type'
+        [value]='inputs.employeeRole1Code.value? inputs.employeeRole1Code.value : ""'
+        [disabled]='inputs.employeeRole1Code.disabled' placeholder="{{'Pages.CardCreation.role1' |translate}}">
+      </ion-input>
+    </ion-item>
+
+  </ion-col>
+
+  <!-- <ion-col size='6' class="flex-col-justify-center-align-start">
+
+    <span class="label" [ngStyle]="{'margin-right': '5%'}">{{'Pages.CardCreation.endDate' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='inputs.employeeRole1Date.type'
+        [value]='inputs.employeeRole1Date.value? inputs.employeeRole1Date.value : ""'
+        [disabled]='inputs.employeeRole1Date.disabled' placeholder="{{'Pages.CardCreation.endDate' |translate}}">
+      </ion-input>
+      <ion-button class='date-button ion-no-margin' shape='round' fill='clear' type="button">
+        <img src="assets/date.png">
+      </ion-button>
+    </ion-item>
+
+  </ion-col> -->
+</ion-row>
+
+<ion-row [ngStyle]="{'margin-top': '1%'}">
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.role2' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='inputs.employeeRole2Code.type'
+        [value]='inputs.employeeRole2Code.value? inputs.employeeRole2Code.value : ""'
+        [disabled]='inputs.employeeRole2Code.disabled' placeholder="{{'Pages.CardCreation.role2' |translate}}">
+      </ion-input>
+    </ion-item>
+
+  </ion-col>
+
+  <!-- <ion-col size='6' class="flex-col-justify-center-align-start">
+
+    <span class="label" [ngStyle]="{'margin-right': '5%'}">{{'Pages.CardCreation.endDate' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='inputs.employeeRole2Date.type'
+        [value]='inputs.employeeRole2Date.value? inputs.employeeRole2Date.value : ""'
+        [disabled]='inputs.employeeRole2Date.disabled' placeholder="{{'Pages.CardCreation.endDate' |translate}}">
+      </ion-input>
+      <ion-button class='date-button ion-no-margin' shape='round' fill='clear' type="button">
+        <img src="assets/date.png">
+      </ion-button>
+    </ion-item>
+
+  </ion-col> -->
+</ion-row>
+
+<ion-row [ngStyle]="{'margin-top': '4%'}">
+  <ion-col size='12' class="flex-col-justify-center-align-center">
+
+    <span class="label">{{'Pages.CardCreation.mainLanguage' |translate}}</span>
+    <ion-item lines="none">
+      <ion-input  [type]='inputs.employeeMainLanguage.type'
+        [value]='inputs.employeeMainLanguage.value? inputs.employeeMainLanguage.value : ""'
+        [disabled]='inputs.employeeMainLanguage.disabled'
+        placeholder="{{'Pages.CardCreation.mainLanguage' |translate}}">
+      </ion-input>
+    </ion-item>
+
+  </ion-col>
+</ion-row>

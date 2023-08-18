@@ -1,0 +1,19 @@
+<div class="card-container">
+
+  <div class="card-title">{{userName}}</div>
+
+  <div>
+    <ng-container *ngIf="!picture else elseTemplate">
+      <div class="image-container">
+        <img class="static-img" src="assets/card-image.png">
+      </div>
+
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div class="image-container">
+        <img class="dynamic-img" [src]="picture" />
+      </div>
+    </ng-template>
+
+  </div>
+</div>

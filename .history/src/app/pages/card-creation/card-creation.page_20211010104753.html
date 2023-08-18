@@ -1,0 +1,57 @@
+<ion-content>
+  <div class='container'>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col col-12 col-md-8 col-lg-4 col-xl-3 class="flex-row-start" [ngStyle]="{'margin-right': '12%'}">
+          <span class="main-title">{{'Pages.CardCreation.mainTitle'| translate}}</span>
+          <span class="user-title ion-margin-start">{{userName}}{{','}}</span>
+          <span class="user-title ion-margin-start">{{id}}</span>
+        </ion-col>
+        <ion-col col-12 col-md-4 col-lg-4 col-xl-3 class="flex-row-end ion-padding-end ion-margin-end"
+          [ngStyle]="{'width': '93px', 'height': '22px', 'margin': '0.6%'}">
+          <span class="settings-text ion-margin-start flex-col-start"
+            (click)="openSettings()">{{'Pages.CardCreation.settings'|
+            translate}}</span>
+          <img class="settings-img ion-margin-start flex-col-center" src="assets/settings.png">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="flex-row-center">
+          <div class="line"></div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="flex-row-center" [ngStyle]="{'margin-left': '5%', 'margin-right': '5%'}">
+
+        <ion-col size='6'>
+          <app-form [inputs]='cardDataInputs'></app-form>
+          <div class="buttons-container flex-row-space-between">
+            <ion-button class="return-button" fill='outline' shape='round' color='darkgray' (click)="clearAll()">
+              <span class="return-button-text">{{"Pages.CardCreation.retutnButton" | translate}}</span>
+            </ion-button>
+
+            <!-- createCardWitoutPrinting : inner function-->
+            <ion-button class="printer-button" [disabled]='isPrintingProcess' shape='round' (click)="createCardWitoutPrinting()">
+              <img src="assets/printer.png">
+              <span class="printer-button-text">{{"Pages.CardCreation.cardIssuanceButton" | translate}}</span>
+            </ion-button>
+          </div>
+        </ion-col>
+
+        <ion-col size='6'>
+          <div>
+            <app-camera (picture)='getPicture($event)'></app-camera>
+          </div>
+
+          <div>
+            <app-demo-card [picture]='croppedImage' [workerType]='cardType' [workerName]='userName' [workerNumber]='id'></app-demo-card>
+          </div>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+  </div>
+</ion-content>

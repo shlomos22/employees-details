@@ -1,0 +1,57 @@
+.container {
+  margin-right: 10%;
+  width: 315px;
+  height: 198px;
+}
+
+.main-title {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+}
+
+.main-title-postion {
+  position: absolute;
+  bottom: 35%;
+  right: 15%;
+}
+
+.image-container {
+  position: absolute;
+  bottom: 12%;
+  right: 15%;
+}
+
+.image-root {
+  margin: 5%;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 8%;
+  font-weight: bold;
+}
+
+.card-title1-postion {
+  position: absolute;
+  bottom: 17%;
+  right: 28%;
+}
+
+.card-title2-postion {
+  position: absolute;
+  bottom: 15%;
+  right: 28%;
+}
+
+.static-img {
+  margin-top: 20%;
+}
+
+.dynamic-img {
+  position: absolute;
+  bottom: 10.2%;
+  right: 13.6%;
+  width: 80px;
+}

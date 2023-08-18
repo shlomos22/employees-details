@@ -1,0 +1,42 @@
+.text-container {
+  align-items: center;
+  text-align: center;
+  margin: 20%;
+}
+
+.main-title {
+  font-size: 28px;
+  color: #666666;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 20px;
+  color: #666666;
+}
+
+.logout-button-text {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.logout-button {
+  width: 139px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #9fbe18;
+  text-align: center;
+}
+
+.return-button-text {
+  font-size: 24px;
+  color: #146d27;
+  font-weight: 700;
+}
+
+.return-button {
+  width: 139px;
+  height: 52px;
+  text-decoration: underline;
+}

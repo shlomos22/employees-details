@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  min-height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main-title {
+  font-size: 28px;
+  color: #666666;
+}
+
+.settings-text {
+  font-size: 16px;
+  color: #333333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.settings-img {
+  width: 19px;
+  height: 19px;
+  margin-left: 28%;
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  border: 1px solid #797979;
+  color: #333333;
+}
+
+.select-container {
+  margin-top: 3%;
+}
+
+.select-inner-container {
+  width: 60%;
+  margin-top: 1%;
+}
+
+.ng-select.custom {
+  width: 414px;
+  height: 42px;
+  font-size: 18px;
+  color: #666666;
+}
+
+.ng-select.custom ::ng-deep .ng-select-container {
+  width: 414px;
+  height: 42px;
+  border-radius: 50px;
+  border: 1px solid #797979;
+  font-family: "Assistant", sans-serif;
+  color: #666666;
+  text-align: right;
+  line-height: normal;
+  box-shadow: none;
+}
+
+.ng-select ::ng-deep .ng-arrow-wrapper {
+  width: 68px;
+  height: 42px;
+  border-radius: 50px;
+  border-right: 1px solid #797979;
+  border-top: 1px solid #797979;
+  border-bottom: 1px solid #797979;
+  background-color: #f2f2f2;
+}
+
+.ng-select ::ng-deep .ng-arrow {
+  top: 20%;
+  right: 5%;
+}
+
+.ng-select.ng-select-opened ::ng-deep .ng-arrow{
+  top: 4px;
+}
+
+.ng-select ::ng-deep .ng-dropdown-panel.ng-select-bottom {
+  margin-top: 5px;
+}
+
+.save-changes-button {
+  width: 196px;
+  height: 33px;
+  border-radius: 30px;
+  background-color: #9fbe18;
+  font-family: 'Assistant Bold', 'Assistant Regular', 'Assistant', sans-serif;
+  font-weight: 700;
+}
+
+ion-button {
+  --background: #9fbe18;
+}
+
+.save-changes-image {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+

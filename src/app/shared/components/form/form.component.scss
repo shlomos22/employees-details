@@ -1,0 +1,49 @@
+.item {
+  width: 65%;
+  height: 43px;
+  border-radius: 50px;
+  border: 1px solid #797979;
+  align-items: end;
+}
+
+ion-input {
+  font-size: 18px;
+  text-align: right;
+}
+
+.native-input:disabled {
+  opacity: 1 !important;
+}
+
+.label {
+  width: 60%;
+  font-family: "Assistant Bold", "Assistant Regular", "Assistant", sans-serif;
+  font-weight: 700;
+  color: var(--ion-color-darkgray)
+}
+
+.button-eye {
+  height: 70%;
+}
+
+.date-button {
+  width: 68px;
+  height: 43px;
+  border-radius: 50px;
+  border: 1px solid #797979;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+.checkbox-title {
+  margin-right: 5%;
+  color: #666666;
+  font-size: 18px;
+}
+
+.checkbox-container {
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 18%;
+}

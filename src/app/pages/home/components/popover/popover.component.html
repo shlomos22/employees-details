@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-grid>
+
+    <div class="text-container flex-col-center">
+      <ion-row>
+        <ion-col class="main-title flex-row-center">
+          <span>{{'App.Popover.mainTitle' | translate }}</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="sub-title flex-row-center">
+          <span>{{'App.Popover.subTitle' | translate }}</span>
+        </ion-col>
+      </ion-row>
+    </div>
+
+
+
+
+
+    <ion-row>
+
+      <ion-col class="flex-row-center">
+        <ion-button class="return-button" color="darkgray" shape='round' fill='outline' (click)="closePopover()">
+          <span class="return-button-text">{{'App.Popover.returnButton' | translate }}</span>
+        </ion-button>
+      </ion-col>
+
+      <ion-col class="flex-row-center">
+        <ion-button class="logout-button" color="darkslateblue" shape='round'   (click)="signOut()">
+          <span class="logout-button-text">{{'App.Popover.logoutButton' | translate }}</span>
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

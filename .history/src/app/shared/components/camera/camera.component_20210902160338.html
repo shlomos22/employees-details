@@ -1,0 +1,85 @@
+<div class="container">
+
+  <ion-row>
+
+    <ion-col class="flex-col-justify-center-align-end" *ngIf="!showWebcam && !webcamImage">
+      <div class="webcam-image">
+        <img src="assets/pic.png">
+      </div>
+    </ion-col>
+
+    <ion-col class="flex-row-end" *ngIf="showWebcam">
+      <div class="webcam-image flex-row-end">
+        <webcam [height]="225" [width]="318" [trigger]="triggerObservable" [videoOptions]="videoOptions"
+          (imageCapture)="handleImage($event)" [allowCameraSwitch]="allowCameraSwitch"
+          [switchCamera]="nextWebcamObservable" [imageQuality]="1" (cameraSwitched)="cameraWasSwitched($event)"
+          (initError)="handleInitError($event)"></webcam>
+      </div>
+    </ion-col>
+
+    <ion-col class="flex-row-end" *ngIf="webcamImage  && !showWebcam">
+      <div class="webcam-image">
+        <image-cropper [imageChangedEvent]="webcamImage" [imageBase64]="webcamImage.imageAsDataUrl"
+          [maintainAspectRatio]="true" [aspectRatio]="120/150" format="png" [resizeToWidth]="83" [resizeToHeight]="100"
+          [cropperMaxWidth]="500" [cropperMaxHeight]="500" [canvasRotation]="canvasRotation" [transform]="transform"
+          [alignImage]="'left'" (imageCropped)="imageCropped($event)">
+        </image-cropper>
+
+        <div class="image-toolbar flex-row-center" *ngIf="editImage">
+          <div class="cropper-button-border" *ngFor="let item of toolbar">
+            <img class="cropper-button" [src]="item.src" (click)="item.callback()">
+          </div>
+        </div>
+
+      </div>
+    </ion-col>
+
+
+    <ion-col size='4.3' class="buttons-container flex-col-space-between">
+      <div>
+        <ion-item lines="none">
+          <ion-toggle [disabled]="!cameraId" [(ngModel)]="showWebcam">
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </ion-toggle>
+          <span>
+            <ng-container *ngIf="!showWebcam else elseTemplate">
+              {{"App.Camera.cameraOff" | translate}}
+            </ng-container>
+            <ng-template #elseTemplate>
+              {{"App.Camera.cameraOn" | translate}}
+            </ng-template>
+          </span>
+        </ion-item>
+      </div>
+
+
+      <div class="flex-col-start tooltip" *ngIf="!cameraId">
+        <span class="camera-error ">{{'App.Camera.errorTitle'| translate}}</span>
+        <span class="tooltiptext">{{'App.Camera.errorDesc'| translate}}</span>
+      </div>
+
+
+      <div class="flex-col-start">
+        <ion-button class="camera-button-text" shape='round' color='yellowgreenen'>
+          <img class="camera-button" src="assets/folder.png">
+          <span class="camera-button-text">{{"App.Camera.takePictureFromFolder" | translate}}</span>
+        </ion-button>
+        <input type="file" class="file" (change)='fileChangeEvent($event)'>
+
+        <ion-button [disabled]="!cameraId" class="camera-button-text" shape='round' color='forestgreen'
+          (click)="takeSnapshot()">
+          <img class="camera-button" src="assets/camera.png">
+          <span class="camera-button-text">{{"App.Camera.takePicture" | translate}}</span>
+        </ion-button>
+        <ion-button class="camera-button-text" fill='outline' shape='round' color='forestgreen'
+          (click)="editSnapshot()">
+          <img class="camera-button" src="assets/editing.png">
+          <span class="camera-button-text" [ngStyle]="{'color': 'forestgreen'}">{{"App.Camera.editing" |
+            translate}}</span>
+        </ion-button>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+</div>

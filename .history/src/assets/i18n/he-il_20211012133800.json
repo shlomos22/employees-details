@@ -1,0 +1,133 @@
+{
+  "Pages": {
+    "Login": {
+      "title": "הנפקת כרטיסים",
+      "userName": "שם משתמש",
+      "password": "סיסמא",
+      "rememberMe": "זכור אותי",
+      "forgotPassword": "שכחתי סיסמא",
+      "signIn": "כניסה",
+      "logoTitle": "Powered by"
+    },
+    "UserId": {
+      "mainTitle": "הזינו מספר עובד",
+      "okButton": "אישור",
+      "backupButton": "להנפקת כרטיס גיבוי",
+      "ServerError": {
+        "employeeNotExist": "מספר עובד זה לא קיים במערכת"
+      }
+    },
+    "CardCreation": {
+      "mainTitle": "פרטים אישיים של",
+      "settings": "הגדרות",
+      "pinCode": "קוד משתמש",
+      "issuingDate": "תאריך הנפקה",
+      "endDate": "תאריך תפוגה",
+      "role1": "תפקיד ראשי",
+      "role2": "תפקיד משני",
+      "mainLanguage": "שפה",
+      "backUpCard": "זה כרטיס גיבוי",
+      "cardIssuanceButton": "הנפקת כרטיס",
+      "retutnButton": "חזור",
+      "pictureNotFound": "על מנת להמשיך יש לצלם תמונה"
+    },
+    "Settings": {
+      "mainTitle": "הגדרות מערכת",
+      "close": "סגירה",
+      "Select": {
+        "cameraSelect": "בחירת מצלמה",
+        "printerSelect": "בחירת מדפסת",
+        "readerSelect": "בחירת קורא",
+        "samSelect": "בחירת SAM"
+      },
+      "deviceNotFound": "רכיב לא נמצא",
+      "saveChangesButton": "שמור שינויים",
+      "deviceDescr": "עמדת הנפקה",
+      "changesSavedSuccessfully": "כל השינויים נשמרו בהצלחה",
+      "noDefinitionHasBeenBhanged": "לא שונתה שום הגדרה"
+    }
+  },
+  "App": {
+    "Toolbar": {
+      "title": "מסוף הנפקת כרטיסים",
+      "userTitle": "שלום!"
+    },
+    "Popover": {
+      "mainTitle": "האם אתם בטוחים שאתם רוצים לצאת?",
+      "subTitle": "כל השינויים לא יישמרו",
+      "logoutButton": "יציאה",
+      "returnButton": "ביטול"
+    },
+    "Camera": {
+      "cameraOn": "ON",
+      "cameraOff": "OFF",
+      "takePicture": "צילום",
+      "takePictureFromFolder": "מקובץ",
+      "editing": "עריכה",
+      "errorTitle": "מצלמה לא עובדת",
+      "errorDesc": "אנא בידקו אם המצלמה מחוברת או מוגדרת"
+    },
+    "DemoCard": {
+      "workerNameTitle": "שם עובד",
+      "workerNumberTitle": "מס' עובד"
+    },
+    "Messages": {
+      "success": "הכרטיס הונפק בהצלחה",
+      "button": "סגור"
+    },
+    "ProgressProcess": {
+      "mainTitle": "בתהליך הדפסה..."
+    },
+    "Interactions": {
+      "loadingPleaseWait": "אנא המתן...",
+      "acceptBtn": "אישור",
+      "cancelBtn": "ביטול",
+      "returnBtn": "חזור",
+      "nextBtn": "הבא",
+      "backBtn": "הקודם",
+      "ServerError": {
+        "title": "שגיאה",
+        "defaultBody": "עקב שגיאה לא ניתן לבצע את הפעולה ברגע זה",
+        "offline": "אין חיבור לאינטרנט",
+        "online": "חזרה למצב מקוון",
+        "button": "סגור"
+      },
+      "AuthMesseges": {
+        "emailNotExist": "כדי לשחזר סיסמה הזן את הדוא\"ל שלך",
+        "emailSentSuccessfully": "דואר אלקטרוני נשלח בהצלחה"
+      },
+      "RecoveryCardEmployeeMesseges": {
+        "title": "הנפקת כרטיס גיבוי",
+        "defaultBody": "האם ברצונך להנפיק כרטיס גיבוי?",
+        "cancelBtn": "ביטול",
+        "acceptBtn": "המשך"
+      },
+      "CreateEmployeeCardMesseges": {
+        "title": "הנפקת כרטיס עובד",
+        "defaultBody": "קיים כרטיס עבור עובד זה האם ברצונך להמשיך?",
+        "cancelBtn": "ביטול",
+        "acceptBtn": "המשך"
+      },
+      "CardIssueMesseges": {
+        "title": "הכרטיס הונפק בהצלחה"
+      },
+      "SettingsError": {
+        "title": "לא קיימות הגדרות מערכת",
+        "defaultBody": "האם להמשיך להגדרות",
+        "cancelBtn": "ביטול",
+        "acceptBtn": "המשך"
+      }
+    }
+  },
+  "Errors": {
+      "globalError": "טעות בעיבוד הבקשה, נסה שנית",
+      "cardNotExists": "כרטיס לא מונח, נסה שנית",
+      "readerNotExists": "קורא לא מחובר",
+      "samNotExists": "sam לא מחובר",
+      "writeIsrDriverCardFailed": "כתיבה לכרטיס לא הצליחה, נסה שנית",
+      "settingsNotDefined": "יש להגדיר הגדרות מערכת לצורך עבודה עם התוכנה",
+    "WS": {
+      "wsClose": "טעות בעיבוד הבקשה המתן מספר שניות ונסה שנית"
+    }
+  }
+}

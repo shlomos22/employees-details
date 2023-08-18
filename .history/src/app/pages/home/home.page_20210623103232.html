@@ -1,0 +1,16 @@
+<ion-header class="header ion-no-border">
+  <ion-toolbar>
+
+    <span class="main-title ion-margin-start" slot="start">{{'App.Toolbar.title' | translate}}</span>
+    <span class="user-title" slot="end" [ngStyle]="{'margin-end': '0.5%'}">{{'App.Toolbar.userTitle' | translate}}</span>
+    <span class="user-title ion-margin-end" slot="end">{{userName}}</span>
+    <ion-buttons slot="end">
+      <img class="user-img ion-margin-end" src="assets/user.png" (click)="presentPopover()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

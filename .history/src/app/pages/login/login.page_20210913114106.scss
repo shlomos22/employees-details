@@ -1,0 +1,106 @@
+ion-content {
+  --main-title-size: 2rem;
+  --sub-title-size: 2rem;
+  --logo-title-size: 1rem;
+}
+
+ion-grid {
+  min-height: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.input-container {
+  border-radius: 2rem;
+  border: 1px solid #666666;
+  width: 250px;
+  margin-right: 16px;
+  margin-left: 16px;
+  background-color: #ffffff;
+  --padding-start: 1.6rem;
+  font-size: 1rem;
+  height: 45px;
+}
+
+.container {
+  display: flex;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-panel {
+  display: flex;
+  border-radius: 100px 0 0 100px;
+  flex-basis: 23%;
+  min-height: 100%;
+  background: #9FABBE 0% 0% no-repeat padding-box;
+}
+
+.main-title {
+  font-size: var(--main-title-size);
+}
+
+.text-size-logo-title {
+  font-size: var(--logo-title-size);
+  font-weight: 600;
+}
+
+.botoom-logo {
+  width: 80px;
+  height: 17px;
+}
+
+.top-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.button-eye {
+  height: 70%;
+}
+
+.checkbox {
+  margin: 5%;
+  width: 100%;
+}
+
+.checkbox-title {
+  margin-right: 5%;
+  color: white;
+}
+
+.confirm-button {
+  width: 160px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button-text {
+  color: white;
+}
+
+#slide {
+  position: absolute;
+  right: -310px;
+  width: 23%;
+  min-height: 100%;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}

@@ -1,0 +1,80 @@
+<ion-content>
+  <div class='container'>
+    <ion-grid>
+
+      <ion-row>
+        <ion-col col-12 col-md-6 col-lg-4 col-xl-3 class="flex-row-start" [ngStyle]="{'margin-right': '15%'}">
+          <span class="main-title">{{'Pages.Settings.mainTitle'| translate}}</span>
+        </ion-col>
+        <ion-col col-12 col-md-6 col-lg-4 col-xl-3 class="flex-row-end ion-padding-end ion-margin-end"
+          [ngStyle]="{'width': '93px', 'height': '22px', 'margin': '0.6%'}">
+          <span class="settings-text ion-margin-start flex-col-start" (click)="return()">{{'Pages.Settings.close'|
+            translate}}</span>
+          <img class="settings-img ion-margin-start flex-col-center" src="assets/close.png">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="flex-row-center">
+          <div class="line"></div>
+        </ion-col>
+      </ion-row>
+
+      <form class="select-container"  #form="ngForm" (ngSubmit)="saveChanges()">
+        <ion-row class="select-inner-container">
+          <ion-col class="flex-row-center">
+
+            <ng-select class="custom" placeholder="{{'Pages.Settings.Select.cameraSelect' | translate }}"
+              name='camera' required ngModel #camera="ngModel" [ngModel]='cameraId | settingsInput' (ngModelChange)='onCameraIdSelected($event)'>
+              <ng-option *ngFor="let camera of cameraDevices" [value]="camera">{{ camera.label }}</ng-option>
+            </ng-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="select-inner-container">
+          <ion-col class="flex-row-center">
+
+            <ng-select class="custom" placeholder="{{'Pages.Settings.Select.printerSelect' | translate }}"
+              name='printer' required ngModel #printer="ngModel" [ngModel]='printerId | settingsInput' (ngModelChange)='onPrinterIdSelected($event)'>
+              <ng-option *ngFor="let printer of printerDevices" [value]="printer">{{ printer.name }}</ng-option>
+            </ng-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="select-inner-container">
+          <ion-col class="flex-row-center">
+
+            <ng-select class="custom" placeholder="{{'Pages.Settings.Select.readerSelect' | translate }}"
+              name='reader' required ngModel #reader="ngModel" [ngModel]='readerId | settingsInput' (ngModelChange)='onReaderIdSelected($event)'>
+              <ng-option *ngFor="let reader of readerDevices" [value]="reader">{{reader.name }}</ng-option>
+            </ng-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="select-inner-container">
+          <ion-col class="flex-row-center">
+
+            <ng-select class="custom" placeholder="{{'Pages.Settings.Select.samSelect' | translate }}"
+              name='sam' required ngModel #sam="ngModel" [ngModel]='samId | settingsInput' (ngModelChange)='onSamIdSelected($event)'>
+              <ng-option *ngFor="let sam of samDevices" [value]="sam">{{sam.name }}</ng-option>
+            </ng-select>
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="select-inner-container">
+          <ion-col class="flex-row-center">
+
+            <ion-button class="save-changes-button"  type='submit' shape='round'>
+              <img class="save-changes-image" src="assets/v.png">
+              <span>{{'Pages.Settings.saveChangesButton' | translate}}</span>
+            </ion-button>
+
+          </ion-col>
+        </ion-row>
+      </form>
+
+
+    </ion-grid>
+  </div>
+</ion-content>
+

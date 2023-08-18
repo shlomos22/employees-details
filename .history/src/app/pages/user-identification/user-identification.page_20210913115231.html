@@ -1,0 +1,42 @@
+<ion-content>
+  <div class='container'>
+    <ion-grid>
+
+      <div [ngStyle]="{'margin-top': '5%'}">
+        <ion-row class="ion-margin-bottom">
+          <ion-col class="flex-row-center">
+            <span class="main-title">{{'Pages.UserId.mainTitle' | translate}}</span>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="flex-row-center">
+
+            <ion-item lines="none">
+              <ion-input class="ion-margin-start" [(ngModel)]="idNumber" type="number"
+                (keyup.enter)="getEmployeeDetails()"></ion-input>
+              <ion-button class="ok-button ion-no-margin" [disabled]='!idNumber' shape='round'
+                (click)="getEmployeeDetails()">
+                <span class="ok-button-text">
+                  {{'Pages.UserId.okButton' | translate}}
+                </span>
+              </ion-button>
+            </ion-item>
+
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="ion-margin-top" *ngIf="showBackupButton">
+          <ion-col class="flex-row-center">
+            <ion-button class="backup-button" [disabled]='isPrinting' shape='round' fill='clear' (click)='createBackupCard()'>
+              <span class="backup-button-text">
+                {{'Pages.UserId.backupButton' | translate}}
+              </span>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+
+    </ion-grid>
+  </div>
+</ion-content>

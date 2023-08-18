@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FLOATING LOADING SCREEN</title>
+  <style>
+    /* Define the main wrapper style */
+    .LoaderWrapper {
+      display: flex;
+      min-height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .LoaderContent {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="LoaderWrapper" style='background-image: url("assets/login-background.png")'>
+    <div class="LoaderContent">
+      FLOATING SCREEN!
+    </div>
+  </div>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js');
+  </script>
+</body>
+
+</html>

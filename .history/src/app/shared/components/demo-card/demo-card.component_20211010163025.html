@@ -1,0 +1,24 @@
+<div class="container" [style]='style'>
+
+  <div class="main-title main-title-postion">{{cardType}}</div>
+
+  <div class="card-title card-title2-postion">{{'App.DemoCard.workerNumberTitle' | translate}}{{': '}}{{workerNumber}}</div>
+
+  <div class="card-title card-title1-postion">{{'App.DemoCard.workerNameTitle' | translate}}{{': '}}{{workerName}}</div>
+
+  <div>
+    <ng-container *ngIf="!picture else elseTemplate">
+      <div class="image-container">
+        <img class="static-img" src="assets/card-image.png">
+      </div>
+
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div class="image-container">
+        <img id="card" [src]="picture" />
+      </div>
+    </ng-template>
+  </div>
+
+
+</div>

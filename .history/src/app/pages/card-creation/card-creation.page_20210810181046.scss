@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  min-height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.main-title {
+  font-size: 28px;
+  color: #666666;
+}
+
+.user-title {
+  font-size: 28px;
+  color: #666666;
+  font-weight: 700;
+  margin-right: 5%;
+}
+
+.settings-text {
+  font-size: 16px;
+  color: #333333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.settings-img {
+  width: 19px;
+  height: 19px;
+  margin-left: 28%;
+}
+
+.line {
+  width: 75%;
+  height: 1px;
+  border: 1px solid #797979;
+  color: #333333;
+}
+
+.item {
+  width: 45%;
+  height: 85%;
+  border-radius: 50px;
+  border: 1px solid #797979;
+  align-items: end;
+}
+
+ion-input {
+  font-size: 18px;
+  color: #666666;
+  text-align: right;
+}
+
+.buttons-container {
+  margin-left: 18%;
+  align-items: center;
+  margin-right: 14%;
+  margin-top: 1%;
+}
+
+.printer-button {
+  width: 226px;
+  height: 39px;
+  border-radius: 100px;
+  --background: linear-gradient(
+    -78.0074220636deg,
+    #9fbe18 3.0276660016%,
+    #006229 100%
+  );
+}
+
+.printer-button-text {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.return-button-text {
+  color: #146d27;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+ion-item {
+  --background: transparent;
+}
+
+

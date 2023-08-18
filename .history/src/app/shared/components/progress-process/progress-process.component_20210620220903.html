@@ -1,0 +1,33 @@
+<div class="root">
+
+  <ion-row>
+    <ion-col class="flex-row-center">
+      <span class="title">{{'App.ProgressProcess.mainTitle' | translate}}</span>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="flex-row-center">
+      <div class="root">
+        <div class="container">
+             <ul class="progressbar">
+               <li *ngFor="let step of steps"></li>
+             </ul>
+         </div>
+     </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="flex-row-center">
+      <img class="image" [src]="image">
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="flex-row-center">
+      <span class="title">{{message}}</span>
+    </ion-col>
+  </ion-row>
+
+</div>

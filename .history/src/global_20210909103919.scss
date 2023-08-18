@@ -1,0 +1,231 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+
+
+
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.flex-row-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.flex-row-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex-col-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-col-end {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.flex-col-start {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.flex-col-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.flex-col-space-around {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.flex-row-justify-center-align-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100%;
+}
+
+.flex-row-justify-center-align-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  min-height: 100%;
+}
+
+.flex-col-justify-center-align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.flex-col-justify-center-align-start {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 100%;
+}
+
+.flex-col-justify-center-align-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 100%;
+}
+
+.flex-row-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-col-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/**------------- POPOVER ------------- **/
+.popover-class .popover-content {
+  --min-width: 415px;
+  --min-height: 405px;
+  border-radius: 10px;
+  border: 1px solid #797979;
+  background-color: #ffffff;
+}
+
+/**------------- LOADING ------------- **/
+.loading-class {
+  --spinner-color: var(--ion-color-darkslateblue);
+}
+
+/**------------- MODAL ------------- **/
+.standard-modal .modal-wrapper {
+  width: 565px;
+  height: 465px;
+  border-radius: 10px;
+  border: 1px solid #797979;
+}
+
+.progress-modal .modal-wrapper {
+  width: 809px;
+  height: 462px;
+  border-radius: 10px;
+  border: 1px solid #797979;
+}
+
+/**------------- ALERT ------------- **/
+.alert-class .alert-wrapper {
+  align-items: center;
+  min-width: 405px;
+  border-radius: 10px;
+}
+
+.alert-class .alert-head {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.alert-class .alert-title {
+  color: #666666;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.alert-class .alert-message {
+  color: #666666;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.alert-class .alert-button-group {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-bottom: 15px;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.alert-class .alert-button-role-cancel {
+  width: 139px !important;
+  height: 52px !important;
+  border-radius: 100px !important;
+  border: 1px solid var(--ion-color-darkgray);
+  background-color: #ffffff !important;
+  box-sizing: border-box !important;
+  font-family: "Assistant Bold", "Assistant Regular", "Assistant", sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--ion-color-darkgray) !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  line-height: normal !important;
+}
+
+.alert-class .alert-button-inner {
+  justify-content: center;
+}
+
+.alert-class .alert-button {
+  width: 130px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: var(--ion-color-darkslateblue);
+  box-sizing: border-box;
+  font-family: "Assistant Bold", "Assistant Regular", "Assistant", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: normal;
+  font-size: 24px;
+}
